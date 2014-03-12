@@ -1,0 +1,78 @@
+<com.doubleTwist.drawerlib.ADrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/center"
+        layout="@layout/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="256dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:background="#f60">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEFT"
+            android:textSize="36sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="256dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:background="#6f0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RIGHT"
+            android:textSize="36sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="#6bf">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOTTOM"
+            android:textSize="36sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:background="#6f9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOP"
+            android:textSize="36sp"/>
+
+    </LinearLayout>
+
+</com.doubleTwist.drawerlib.ADrawerLayout>

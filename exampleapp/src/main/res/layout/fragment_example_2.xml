@@ -1,0 +1,124 @@
+<com.doubleTwist.drawerlib.ADrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:drawer="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    drawer:peekSizeLeft="64dp"
+    drawer:peekSizeBottom="64dp"
+    drawer:peekSizeTop="64dp"
+    drawer:peekSizeRight="64dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/center"
+        layout="@layout/content_padded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="256dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:background="#f60">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="LEFT"
+            android:textSize="36sp"/>
+
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:text="PEEK"
+            android:gravity="center"
+            android:background="#3fff"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right"
+        android:layout_width="256dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:background="#6f0">
+
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:text="PEEK"
+            android:gravity="center"
+            android:background="#3fff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RIGHT"
+            android:gravity="center"
+            android:textSize="36sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#6bf">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="PEEK"
+            android:gravity="center"
+            android:background="#3fff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="BOTTOM"
+            android:textSize="36sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#6f9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TOP"
+            android:textSize="36sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="PEEK"
+            android:gravity="center"
+            android:background="#3fff"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</com.doubleTwist.drawerlib.ADrawerLayout>
